@@ -1,0 +1,63 @@
+.obg__container {
+    justify-content: center;
+}
+
+.obg__center {
+    text-align: center;
+}
+
+.obg__aubrey {
+    justify-self: center;
+    max-width: 65%;
+}
+
+.obg__ena {
+    width: 3rem;
+}
+
+.obg__description {
+    font-size: 14px;
+}
+
+.obg__margin {
+    margin-top: 10px;
+}
+
+.obg__copy-all {
+    justify-items: center;
+}
+
+.obg__copy {
+    display: block;
+    text-align: center;
+    font-size: var(--smaller-font-size);
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+    .obg__container {
+        display: none;
+    }
+
+    .obg__aubrey {
+        justify-self: center;
+        max-width: 55%;
+    }
+
+    .obg__copy {
+        display: block;
+        text-align: center;
+        font-size: var(--smaller-font-size);
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .obg__container {
+        display: none;
+    }
+
+    .obg__aubrey {
+        justify-self: center;
+        max-width: 65%;
+    }
+}

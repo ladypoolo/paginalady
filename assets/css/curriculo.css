@@ -1,0 +1,84 @@
+.curriculo__container {
+    column-gap: 7rem;
+}
+  
+.curriculo__title {
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-black);
+    line-height: 109%;
+    margin-bottom: var(--mb-1);
+}
+  
+.curriculo__description {
+    margin-bottom: 1em;
+    font-size: 16px;
+}
+  
+.curriculo__img {
+    max-width: 100%;
+    justify-self: center;
+    animation: floating 2s ease-in-out infcurriculote;
+    transition: transform .2s; /* Animation */
+}
+  
+.curriculo__img-one, .curriculo__img-two {
+    position: absolute;
+    transition: .3s;
+}
+  
+.curriculo__img-one {
+    width: 100px;
+    top: 6rem;
+    right: -2rem;
+}
+  
+.curriculo__img-two {
+    width: 150px;
+    bottom: 4rem;
+    right: 4rem;
+}
+  
+.curriculo__img-one:hover, .curriculo__img-two:hover {
+    transform: translateY(-.5rem);
+}
+  
+ 
+/* BREAKPOINTS --------------------------------------------------------------------------------------*/
+@media screen and (min-width: 576px) {
+    .curriculo__img {
+        max-width: 50%;
+        justify-self: center;
+        animation: floating 2s ease-in-out infcurriculote;
+        transition: transform .2s; 
+    }
+
+    .curriculo__container {
+        grid-template-columns: .8fr;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .curriculo__data {
+        justify-content: center;
+    }
+
+    .curriculo__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+    
+@media screen and (min-width: 992px) {
+
+    .curriculo__container {
+        column-gap: 7rem;
+    }
+}
+  
+@media screen and (min-width: 1200px) {
+    .curriculo__description {
+        margin-bottom: 1em;
+        font-size: 18px;
+    }
+}
